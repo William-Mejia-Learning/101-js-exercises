@@ -60,7 +60,7 @@ addToDone("Exercise 2 is correct.");
 // Create a variable named vegetables and assign it an array of strings containing the following vegetables.
 // eggplant, broccoli, carrot, cauliflower, and zucchini
 
-let vegetables = ["eggplant", "broccoli", "carrot", "cauliflower", "zucchini"]
+let vegetables = ["eggplant", "broccoli", "carrot", "cauliflower", "zucchini"];
 assert(vegetables, ["eggplant", "broccoli", "carrot", "cauliflower", "zucchini"], "Exercise 3");
 addToDone("Exercise 3 is correct.");
 
@@ -68,6 +68,7 @@ addToDone("Exercise 3 is correct.");
 // Exercise 4
 // Create a variable named numbers and assign it an array of numbers, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 assert(numbers, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "Exercise 4");
 addToDone("Exercise 4 is correct.");
 
@@ -76,6 +77,7 @@ addToDone("Exercise 4 is correct.");
 // Add the string "tomato" to the end of the fruits array. 
 // *Hint* Recommend finding and using a built-in JS operation to add to an array rather than recreating the array.
 
+fruits.push("tomato");
 assert(fruits, ["mango", "banana", "guava", "kiwi", "strawberry", "tomato"], "Exercise 5");
 addToDone("Exercise 5 is correct");
 
@@ -83,7 +85,7 @@ addToDone("Exercise 5 is correct");
 // add the string "tomato" onto the end of the vegetables array. 
 // Recommend using the built-in JS operation to add to an array.
 
-
+vegetables.push("tomato");
 assert(vegetables,["eggplant", "broccoli", "carrot", "cauliflower", "zucchini", "tomato"], "Exercise 6");
 addToDone("Exercise 6 is correct")
 
@@ -91,7 +93,7 @@ addToDone("Exercise 6 is correct")
 // Exercise 7
 // Given the array of numbers defined below, reverse the array of numbers that you created above. 
 var someNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
+someNumbers.reverse();
 
 assert(someNumbers, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1], "Exercise 7")
 addToDone("Exercise 7 is correct")
@@ -101,6 +103,7 @@ addToDone("Exercise 7 is correct")
 // Exercise 8
 // Sort the vegetables in alphabetical order. Recommend finding a way to sort the array with a built-in method
 
+vegetables.sort();
 assert(vegetables, ['broccoli', 'carrot', 'cauliflower', 'eggplant', 'tomato', 'zucchini'], "Exercise 8")
 addToDone("Exercise 8 is correct.")
 
