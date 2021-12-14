@@ -647,7 +647,7 @@ addToDone("Exercise 40 is correct.")
 // Write a function definition named areaOfCircle that takes in a number representing a circle's radius and returns the area of the circle
 
 function areaOfCircle(x) {
-  return
+  return (x * x * Math.PI);
 }
 
 assert(areaOfCircle(3), 28.274333882308138, "Exercise 41");
@@ -659,6 +659,9 @@ addToDone("Exercise 41 is correct.")
 // Exercise 42
 // Write a function definition named circumference that takes in a number representing a circle's radius and returns the circumference.
 
+function circumference(x) {
+  return (2 * x * Math.PI);
+}
 assert(circumference(3), 18.84955592153876, "Exercise 42");
 assert(circumference(5), 31.41592653589793, "Exercise 42");
 assert(circumference(7), 43.982297150257104, "Exercise 42");
@@ -682,6 +685,11 @@ function isOneOrTwoOrThree(x) {
 // Exercise 43
 // Review this code carefully https://gist.github.com/ryanorsinger/5627b954d119dabb3d8c44d56b38c354 if you want more guidance on Exercises 43, 44, and 45.
 // Write a function definition named isVowel that takes in value and returns true if the value is a, e, i, o, u in upper or lower case.
+
+function isVowel(x) {
+  if
+  return x == a || x == e || x == i || x == o || x == u
+}
 
 assert(isVowel("a"), true, "Exercise 43");
 assert(isVowel("U"), true, "Exercise 43");
