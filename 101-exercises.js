@@ -717,7 +717,15 @@ addToDone("Exercise 44 is correct.")
 // Write a function definition named countVowels that takes in value and returns the count of the nubmer of vowels in a sequence.
 
 function countVowels(x) {
+  let vowelList = 'aeiouAEIOU'
+  let count = 0
   
+  for(let i = 0; i < x.length; i++) {
+    if (vowelList.indexOf(x[i]) !== -1)
+      {count += 1;
+      }
+  } 
+  return count
 }
 
   
@@ -732,6 +740,10 @@ addToDone("Exercise 45 is correct.")
 // Exercise 46
 // Write a function definition named removeVowels that takes in string and returns the string without any vowels
 
+function removeVowels(x) {
+  return x.replace(/[aeiouAEIOU]/gi, '')
+}
+
 assert(removeVowels("banana"), "bnn", "Exercise 46");
 assert(removeVowels("ubuntu"), "bnt", "Exercise 46");
 assert(removeVowels("mango"), "mng", "Exercise 46");
@@ -741,6 +753,10 @@ addToDone("Exercise 46 is correct.")
 
 // Exercise 47
 // Write a function definition named startsWithVowel that takes in string and true if the string starts with a vowel
+
+function startsWithVowel(x) {
+  return
+}
 
 assert(startsWithVowel("ubuntu"), true, "Exercise 47");
 assert(startsWithVowel("banana"), false, "Exercise 47");
