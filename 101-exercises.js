@@ -767,7 +767,9 @@ addToDone("Exercise 47 is correct.")
 // Exercise 48
 // Write a function definition named endsWithVowel that takes in string and true if the string ends with a vowel
 
-
+function endsWithVowel(x) {
+  return ['a', 'e', 'i', 'o', 'u'].has(s[x.length-1])
+}
 assert(endsWithVowel("ubuntu"), true, "Exercise 48");
 assert(endsWithVowel("banana"), true, "Exercise 48");
 assert(endsWithVowel("mango"), true, "Exercise 48");
