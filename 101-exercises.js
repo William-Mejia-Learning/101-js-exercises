@@ -755,7 +755,7 @@ addToDone("Exercise 46 is correct.")
 // Write a function definition named startsWithVowel that takes in string and true if the string starts with a vowel
 
 function startsWithVowel(x) {
-  return
+  let newString = x.C
 }
 
 assert(startsWithVowel("ubuntu"), true, "Exercise 47");
