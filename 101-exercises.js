@@ -782,7 +782,6 @@ addToDone("Exercise 48 is correct.")
 // Write a function definition named startsAndEndsWithVowel that takes in string and returns true if the string starts and ends with a vowel
 
 function startsAndEndsWithVowel(x) {
-  let newStr = x.split('');
   let firstStr = x.charAt(0);
   let lastStr = x.charAt(x.length -1);
    if ((lastStr === 'a'|| lastStr ==='e' || lastStr ==='i' || lastStr === 'o' || lastStr === 'u') && (firstStr === 'a'|| firstStr ==='e' || firstStr ==='i' || firstStr === 'o' || firstStr === 'u')){
@@ -799,6 +798,15 @@ addToDone("Exercise 49 is correct.")
 
 // Exercise 50
 // Write a function definition named first that takes in sequence and returns the first value of that sequence.
+
+function first(x) {
+  let firstV = x.charAt(0);
+  if (firstV === x) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 assert(first("ubuntu"), "u", "Exercise 50");
 assert(first([1, 2, 3]), 1, "Exercise 50");
