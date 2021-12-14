@@ -228,8 +228,8 @@ addToDone("Exercise 11 is correct.")
 // If you get stuck, be sure to check the example code and documentation listed above
 
 
-function isPositive(x > 0) {
-  return true
+function isPositive(x) {
+  return x > 0;
 }
 
 assert(isPositive(0.25), true, "Exercise 12");
@@ -247,7 +247,9 @@ addToDone("Exercise 12 is correct.")
 
 // Exercise 13
 // Write a function definition named isNegative that takes in a number and returns true or False if that number is negative.
-
+function isNegative(x) {
+  return x < 0;
+}
 
 
 assert(isNegative(positiveOddNumber), false, "Exercise 13");
@@ -260,6 +262,10 @@ addToDone("Exercise 13 is correct.")
 // Exercise 14
 // Write a function definition named isOdd that takes in a number and returns true or false if that number is odd.
 
+function isOdd(x) {
+  return Math.abs(x % 2) == 1;
+}
+
 assert(isOdd(positiveOddNumber), true, "Exercise 14");
 assert(isOdd(positiveEvenNumber), false, "Exercise 14");
 assert(isOdd(negativeOddNumber), true, "Exercise 14");
@@ -269,6 +275,9 @@ addToDone("Exercise 14 is correct.")
 // Exercise 15
 // Write a function definition named isEven that takes in a number and returns true or false if that number is even.
 
+function isEven(x) {
+  return Math.abs(x % 2) == 0;
+}
 assert(isEven(2), true, "Exercise 15");
 assert(isEven(positiveOddNumber), false, "Exercise 15");
 assert(isEven(positiveEvenNumber), true, "Exercise 15");
@@ -280,6 +289,9 @@ addToDone("Exercise 15 is correct.")
 // Exercise 16
 // Write a function definition named identity that takes in any input and returns that input. Don't overthink this one!
 
+function identity(x) {
+  return x
+}
 assert(identity(fruits), fruits, "Exercise 16");
 assert(identity(vegetables), vegetables, "Exercise 16");
 assert(identity(positiveOddNumber), positiveOddNumber, "Exercise 16");
@@ -292,7 +304,9 @@ addToDone("Exercise 16 is correct.")
 // Exercise 17
 // Write a function definition named isPositiveOdd that takes in a number and returns true or false if the value is both greater than zero and odd
 
-
+isPositiveOdd(x) {
+  
+}
 
 assert(isPositiveOdd(3), true, "Exercise 17");
 assert(isPositiveOdd(positiveOddNumber), true, "Exercise 17");
