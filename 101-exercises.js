@@ -801,10 +801,8 @@ addToDone("Exercise 49 is correct.")
 
 function first(x) {
   let firstV = x.charAt(0);
-  if (firstV === x) {
-    return true;
-  } else {
-    return false;
+  if (firstV == x) {
+    console.log(x)
   }
 }
 
