@@ -112,6 +112,8 @@ addToDone("Exercise 8 is correct.")
 // Exercise 9
 // Write the code necessary to sort the fruits in reverse alphabetical order
 
+fruits.sort();
+fruits.reverse();
 assert(fruits, ['tomato', 'strawberry', 'mango', 'kiwi', 'guava', 'banana'], "Exercise 9")
 addToDone("Exercise 9 is correct.")
 
@@ -121,6 +123,7 @@ addToDone("Exercise 9 is correct.")
 // Assign the result to a variable named fruitsAndVeggies. 
 // *hint* the search engine search here would be "how to combine two arrays in JavaScript", for example.
 
+let fruitsAndVeggies = fruits.concat(vegetables);
 assert(fruitsAndVeggies, ['tomato', 'strawberry', 'mango', 'kiwi', 'guava', 'banana', 'broccoli', 'carrot', 'cauliflower', 'eggplant', 'tomato', 'zucchini'], "Exercise 10")
 addToDone("Exercise 10 is correct")
 
@@ -203,7 +206,9 @@ assert(plusTwo(0), 2, "zero plus 2 is two")
 // Exercise 11
 // Write a function definition for a function named addOne that takes in a number and returns that number plus one
 
-
+function addOne(x) {
+  return x + 1;
+}
 
 assert(addOne(2), 3, "Exercise 11");
 assert(addOne(0), 1, "Exercise 11");
@@ -223,7 +228,9 @@ addToDone("Exercise 11 is correct.")
 // If you get stuck, be sure to check the example code and documentation listed above
 
 
-
+function isPositive(x > 0) {
+  return true
+}
 
 assert(isPositive(0.25), true, "Exercise 12");
 assert(isPositive(0.00001), true, "Exercise 12");
