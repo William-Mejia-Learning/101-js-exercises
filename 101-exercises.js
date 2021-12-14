@@ -768,7 +768,7 @@ addToDone("Exercise 47 is correct.")
 // Write a function definition named endsWithVowel that takes in string and true if the string ends with a vowel
 
 function endsWithVowel(x) {
-  const vEnd= new Set(['a','e','i','o','u']);
+  let vEnd= new Set(['a','e','i','o','u']);
     return vEnd.has(x[x.length-1]);
 }
 assert(endsWithVowel("ubuntu"), true, "Exercise 48");
@@ -781,6 +781,9 @@ addToDone("Exercise 48 is correct.")
 // Exercise 49
 // Write a function definition named startsAndEndsWithVowel that takes in string and returns true if the string starts and ends with a vowel
 
+function startsAndEndsWithVowel(x) {
+  
+}
 assert(startsAndEndsWithVowel("ubuntu"), true, "Exercise 49");
 assert(startsAndEndsWithVowel("banana"), false, "Exercise 49");
 assert(startsAndEndsWithVowel("mango"), false, "Exercise 49");
