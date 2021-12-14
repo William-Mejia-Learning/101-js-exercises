@@ -800,7 +800,7 @@ addToDone("Exercise 49 is correct.")
 // Write a function definition named first that takes in sequence and returns the first value of that sequence.
 
 function first(x) {
-  return x[0];
+  return x [0];
 }
 
 assert(first("ubuntu"), "u", "Exercise 50");
