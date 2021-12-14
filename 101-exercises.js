@@ -703,7 +703,7 @@ addToDone("Exercise 43 is correct.")
 // Write a function definition named hasVowels that takes in value and returns true if the string contains any vowels.
 
 function hasVowels(x) {
-  return
+  return x.includes('a') || x.includes('e') || x.includes('o') || x.includes('i') || x.includes('u')
 }
 
 assert(hasVowels("banana"), true, "Exercise 44");
@@ -715,6 +715,10 @@ addToDone("Exercise 44 is correct.")
 
 // Exercise 45
 // Write a function definition named countVowels that takes in value and returns the count of the nubmer of vowels in a sequence.
+
+function countVowels(x) {
+  return x.match('a') || x.match('e') || x.match('i') || x.match('o') || x.match('u');
+}
 
 assert(countVowels("banana"), 3, "Exercise 45");
 assert(countVowels("ubuntu"), 3, "Exercise 45");
