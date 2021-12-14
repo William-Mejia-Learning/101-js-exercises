@@ -687,9 +687,9 @@ function isOneOrTwoOrThree(x) {
 // Write a function definition named isVowel that takes in value and returns true if the value is a, e, i, o, u in upper or lower case.
 
 function isVowel(x) {
-  if
-  return x == a || x == e || x == i || x == o || x == u
+  return x == a || x == e || x == o || x == i || x == o || x == u
 }
+  
 
 assert(isVowel("a"), true, "Exercise 43");
 assert(isVowel("U"), true, "Exercise 43");
