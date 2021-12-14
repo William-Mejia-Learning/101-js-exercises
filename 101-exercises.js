@@ -717,14 +717,7 @@ addToDone("Exercise 44 is correct.")
 // Write a function definition named countVowels that takes in value and returns the count of the nubmer of vowels in a sequence.
 
 function countVowels(x) {
-  let vowelList = 'aeiouAEIOU'
-  let count = 0
   
-  for (let i = 0; i < x.lenght ; i++){
-    if (vowelList.indexOf[x(i)] !== -1)
-   {count +=1;
-   }
-    return count;
 }
 
   
