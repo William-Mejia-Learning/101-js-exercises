@@ -333,7 +333,7 @@ addToDone("Exercise 18 is correct.")
 // Exercise 19
 // Write a function definition named isNegativeOdd that takes in a number and returns true or false if the value is both less than zero and odd.
 function isNegativeOdd(x) {
-  return x < 0 && (x % 2) == 1;
+  return (-x % 2) == 1 && (x < 0);
 }
 assert(isNegativeOdd(-3), true, "Exercise 19" );
 assert(isNegativeOdd(positiveOddNumber), false, "Exercise 19");
@@ -345,6 +345,10 @@ addToDone("Exercise 19 is correct.")
 
 // Exercise 20
 // Write a function definition named isNegativeEven that takes in a number and returns true or false if the value is both less than zero and even.
+
+function isNegativeEven(x) {
+  return (-x % 2) == 0 && (x < 0)
+}
 
 assert(isNegativeEven(-4), true, "Exercise 20" );
 assert(isNegativeEven(positiveOddNumber), false, "Exercise 20");
@@ -358,6 +362,9 @@ addToDone("Exercise 20 is correct.")
 // Exercise 21
 // Write a function definition named half that takes in a number and returns half the provided number.
 
+function half(x) {
+  return x / 2;
+}
 assert(half(4), 2, "Exercise 21");
 assert(half(5), 2.5, "Exercise 21");
 assert(half(positiveOddNumber), positiveOddNumber / 2, "Exercise 21");
@@ -371,6 +378,9 @@ addToDone("Exercise 21 is correct.")
 // Exercise 22
 // Write a function definition named double that takes in a number and returns double the provided number.
 
+function double(x) {
+  return x * 2;
+}
 assert(double(4), 8, "Exercise 22");
 assert(double(5), 10, "Exercise 22");
 assert(double(positiveOddNumber), positiveOddNumber * 2, "Exercise 22");
@@ -384,6 +394,9 @@ addToDone("Exercise 22 is correct.")
 // Exercise 23
 // Write a function definition named triple that takes in a number and returns triple the provided number.
 
+function triple(x) {
+  return x * 3;
+}
 assert(triple(4), 12, "Exercise 23");
 assert(triple(5), 15, "Exercise 23");
 assert(triple(positiveOddNumber), positiveOddNumber * 3, "Exercise 23");
@@ -396,7 +409,9 @@ addToDone("Exercise 23 is correct.")
 
 // Exercise 24
 // Write a function definition named reverseSign that takes in a number and returns the provided number but with the sign reversed.
-
+function reverseSign(x) {
+  return x * -1;
+}
 assert(reverseSign(4), -4, "Exercise 24");
 assert(reverseSign(-5), 5, "Exercise 24");
 assert(reverseSign(positiveOddNumber), positiveOddNumber * -1, "Exercise 24");
