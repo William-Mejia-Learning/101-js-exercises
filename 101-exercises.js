@@ -782,7 +782,7 @@ addToDone("Exercise 48 is correct.")
 // Write a function definition named startsAndEndsWithVowel that takes in string and returns true if the string starts and ends with a vowel
 
 function startsAndEndsWithVowel(x) {
-  
+  return x.startsWith('a', 'e', 'i', 'o', 'u') || x.startsWith('A', 'E', 'I', 'O', 'U' ) && x.endsWith('a', 'e', 'i', 'o', 'u') || x.endsWith('A', 'E', 'I', 'O', 'U');
 }
 assert(startsAndEndsWithVowel("ubuntu"), true, "Exercise 49");
 assert(startsAndEndsWithVowel("banana"), false, "Exercise 49");
