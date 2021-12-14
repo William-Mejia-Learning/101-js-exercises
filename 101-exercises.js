@@ -800,10 +800,7 @@ addToDone("Exercise 49 is correct.")
 // Write a function definition named first that takes in sequence and returns the first value of that sequence.
 
 function first(x) {
-  let firstV = x.charAt(0);
-  if (firstV == x) {
-    console.log(x)
-  }
+  return x[0];
 }
 
 assert(first("ubuntu"), "u", "Exercise 50");
