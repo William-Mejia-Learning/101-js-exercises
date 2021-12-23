@@ -928,7 +928,8 @@ addToDone("Exercise 58 is correct.")
 // Write a function definition named firstToLast that takes in sequence and returns the sequence with the first value moved to the end of the sequence.
 
 function firstToLast (x) {
-  
+  x.push(x.shift());
+  return x
 }
 
 
