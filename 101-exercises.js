@@ -927,7 +927,9 @@ addToDone("Exercise 58 is correct.")
 // Exercise 59
 // Write a function definition named firstToLast that takes in sequence and returns the sequence with the first value moved to the end of the sequence.
 
-
+function firstToLast (x) {
+  
+}
 
 
 assert(firstToLast([1, 2, 3, 4]), [2, 3, 4, 1], "Exercise 59");
