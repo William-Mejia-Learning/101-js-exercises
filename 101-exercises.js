@@ -896,7 +896,7 @@ addToDone("Exercise 56 is correct.")
 // Write a function definition named firstAndSecond that takes in sequence and returns the first and second value of that sequence as an array
 
 function firstAndSecond(x) {
-  return x[0] && x[1];
+  let i = x.slice
 }
 
 
