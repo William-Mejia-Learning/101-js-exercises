@@ -896,7 +896,8 @@ addToDone("Exercise 56 is correct.")
 // Write a function definition named firstAndSecond that takes in sequence and returns the first and second value of that sequence as an array
 
 function firstAndSecond(x) {
-  let i = x.slice
+  let i = x.slice(0,2);
+  return i;
 }
 
 
@@ -908,6 +909,12 @@ addToDone("Exercise 57 is correct.")
 
 // Exercise 58
 // Write a function definition named firstAndLast that takes in sequence and returns the first and last value of that sequence as an array
+
+function firstAndLast(x) {
+  let y = x.slice(0, x.length);
+  return y;
+}
+
 
 assert(firstAndLast([1, 2, 3, 4]), [1, 4], "Exercise 58");
 assert(firstAndLast(["JS", "is", "awesome"]), ["JS", "awesome"], "Exercise 58");
