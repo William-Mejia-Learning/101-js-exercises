@@ -911,8 +911,9 @@ addToDone("Exercise 57 is correct.")
 // Write a function definition named firstAndLast that takes in sequence and returns the first and last value of that sequence as an array
 
 function firstAndLast(x) {
-  let y = x.slice(0, x.length);
-  return y;
+  let first = x[0];
+  let last = x[x.length-1];
+  return [first, last];
 }
 
 
@@ -925,6 +926,9 @@ addToDone("Exercise 58 is correct.")
 
 // Exercise 59
 // Write a function definition named firstToLast that takes in sequence and returns the sequence with the first value moved to the end of the sequence.
+
+
+
 
 assert(firstToLast([1, 2, 3, 4]), [2, 3, 4, 1], "Exercise 59");
 assert(firstToLast(["JS", "is", "awesome"]), ["is", "awesome", "JS"], "Exercise 59");
