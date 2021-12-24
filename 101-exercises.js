@@ -943,6 +943,13 @@ addToDone("Exercise 59 is correct.")
 // Exercise 60
 // Write a function definition named sumAll that takes in sequence of numbers and returns all the numbers added together.
 
+function sumAll(x) {
+  let sum = 0;
+  x.forEach(function(element) {
+    sum += element;
+  }); return sum;
+}
+
 assert(sumAll([1, 2, 3, 4]), 10, "Exercise 60");
 assert(sumAll([3, 3, 3]), 9, "Exercise 60");
 assert(sumAll([0, 5, 6]), 11, "Exercise 60");
@@ -952,6 +959,8 @@ addToDone("Exercise 60 is correct.")
 
 //  Exercise 61
 //  Write a function definition named mean that takes in sequence of numbers and returns the average value
+
+function mean
 
 assert(mean([1, 2, 3, 4]), 2.5, "Exercise 61");
 assert(mean([3, 3, 3]), 3, "Exercise 61");
