@@ -980,9 +980,9 @@ addToDone("Exercise 61 is correct.")
 
 function median(input){
   if(input.length % 2 !== 0){
-    return input[Math.round((input.length - 1)/ 2)]
+    return input[(input.length - 1) / 2]
   }else {
-    return input[] 
+    return (input[input.length / 2] + input[input.length + 1] / 2) / 2
   }
 }
 
