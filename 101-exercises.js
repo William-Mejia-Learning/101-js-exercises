@@ -978,15 +978,16 @@ addToDone("Exercise 61 is correct.")
 // Exercise 62
 // Write a function definition named median that takes in sequence of numbers and returns the average value
 
-function median(input){
-  if(input.length % 2 !== 0){
-    return input[(input.length - 1) / 2]
-  }else {
-    return ((input[input.length - 2] / 2) + input[input.length / 2]) / 2
+function median(input) {
+  let x = input.length;
+  if (x % 2 !== 0) {
+    return input[(x - 1) / 2];
+  } else {
+    let a = (x - 2) / 2;
+    let b = x / 2;
+    return (input[a] + input[b]) / 2;
   }
 }
-
-
 
 
 assert(median([1, 2, 3, 4, 5]), 3.0, "Exercise 62");
@@ -998,6 +999,8 @@ addToDone("Exercise 62 is correct.")
 
 // Exercise 63
 // Write a function definition named maxMinusMin that takes in an array of numbers and returns the difference of the maximum minus theminimum.
+
+function maxMinusMin
 
 
 assert(maxMinusMin([1, 2, 2, 8, 3, 4]), 7, "Exercise 63");
