@@ -979,12 +979,13 @@ addToDone("Exercise 61 is correct.")
 // Write a function definition named median that takes in sequence of numbers and returns the average value
 
 function median(input){
-  if(input.length % 2 === 0){
-    return input.length / 2
+  if(input.length % 2 !== 0){
+    return input[Math.round((input.length - 1)/ 2)]
   }else {
-    return input[input.length / 2]
+    return input[] 
   }
 }
+
 
 
 
