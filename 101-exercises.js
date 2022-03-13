@@ -1217,9 +1217,12 @@ addToDone("Exercise 72 is correct.")
 
 function hasOdds(arr){
   let containsOdd = false;
-  arr.forEach(function(){
-    
-  })
+  arr.forEach(function(num){
+    if(num % 2 === 1){
+      containsOdd = true;
+    }
+  });
+  return containsOdd;
 }
 
 assert(hasOdds([1, 2, 3]), true, "Exercise 73");
@@ -1231,6 +1234,19 @@ addToDone("Exercise 73 is correct.")
 
 // Exercise 74
 // Write a function definition named countOdds that takes in sequence of numbers and returns a count of the any odd numbers in the sequence
+
+function countOdds(arr){
+  let count = 0;
+  
+  arr.forEach(function(num){
+    if(num % 2 === 1){
+      count++;
+    }
+  });
+  return count;
+}
+
+
 
 assert(countOdds([1, 2, 3]), 2, "Exercise 74");
 assert(countOdds([2, 5, 6]), 1, "Exercise 74");
