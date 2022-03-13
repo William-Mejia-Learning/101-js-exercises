@@ -1781,8 +1781,17 @@ addToDone("Exercise 99 is complete.")
 function getAverageSpentPerItem(obj){
   let totalPrice = 0;
   let totalQuant = 0;
+  let avg = 1
   
   let items = obj.items;
+  items.forEach(function(prices){
+    totalPrice += prices.price;
+    totalQuant += prices.quantity;
+    // avg = totalPrice / totalQuant; 
+  console.log(totaltotalPrice);
+  })
+  // console.log(totalQuant);
+  // console.log(avg);
 }
 
 
