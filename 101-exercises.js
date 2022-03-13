@@ -1000,12 +1000,21 @@ addToDone("Exercise 62 is correct.")
 // Exercise 63
 // Write a function definition named maxMinusMin that takes in an array of numbers and returns the difference of the maximum minus theminimum.
 
-function maxMinusMin(input){
-  let x = input.join(", ")
-  let y = 
-  console.log(Math.max(x))
+function maxMinusMin(arr){
+  let smallest = arr[0];
+  for(let small of arr){
+    if (small < smallest){
+      smallest = small
+    }
+  }
+  let highest = arr[0]
+  for(let high of arr){
+    if(high > highest){
+      highest = high
+    }
+  }
+  return highest - smallest
 }
-
 
 assert(maxMinusMin([1, 2, 2, 8, 3, 4]), 7, "Exercise 63");
 assert(maxMinusMin([1, 1, 2, 3, 9]), 8, "Exercise 63");
