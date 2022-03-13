@@ -1530,6 +1530,11 @@ const book = {
 // Exercise 89
 // Write a function named getPrice that takes in a object and returns the price
 
+
+function getPrice(obj){
+  return book.price;
+}
+
 assert(getPrice(book), 36.99, "Exercise 89");
 addToDone("Exercise 89 is complete.")
 
@@ -1537,6 +1542,11 @@ addToDone("Exercise 89 is complete.")
 
 // Exercise 90
 // Write a function named getBookAuthor that takes in a object (the above declared book variable) and returns the author's name
+
+function getBookAuthor(obj){
+  
+}
+
 
 
 assert(getBookAuthor(book), "Frances Buontempo", "Exercise 90");
