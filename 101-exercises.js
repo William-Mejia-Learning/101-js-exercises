@@ -1727,8 +1727,10 @@ addToDone("Exercise 96 is complete")
 
 
 function numberOfItemTypes(obj){
-  obj.filter((v, i, a) => a.indexOf(v) === i)
+  let myObjArray = shoppingCart.items;
+  return myObjArray.length;
 }
+  
 
 assert(numberOfItemTypes(shoppingCart), 5, "Exercise 97");
 addToDone("Exercise 97 is complete.")
@@ -1738,6 +1740,10 @@ addToDone("Exercise 97 is complete.")
 // Exercise 98
 // Write a function named totalNumberOfItems that takes in the shopping cart as input and returns the total number all item quantities.
 // This should return the sum of all of the quantities from each item type
+
+function totalNumberOfItems(obj){
+  
+}
 
 assert(totalNumberOfItems(shoppingCart), 17, "Exercise 98");
 addToDone("Exercise 98 is complete.")
