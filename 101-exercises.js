@@ -1625,8 +1625,16 @@ addToDone("Exercise 93 is complete.")
 // Hint: Much like sometimes start functions with a variable set to zero, you may want to create a object with the price set to zero to compare to each object's price in the array
 
 function highestPriceBook(obj){
-  
+  let highest = {price: 0};
+  obj.forEach(function(prices){
+    if(prices.price > highest.price){
+      highest.price = prices.price
+    }
+  })
+  console.log(highest)
+  // return highest
 }
+
 
 
 assert(highestPriceBook(books), {
