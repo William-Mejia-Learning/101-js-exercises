@@ -1628,11 +1628,11 @@ function highestPriceBook(obj){
   let highest = {price: 0};
   obj.forEach(function(prices){
     if(prices.price > highest.price){
-      highest.price = prices.price
+      highest = prices;
+      
     }
   })
-  console.log(highest)
-  // return highest
+  return highest;
 }
 
 
@@ -1650,6 +1650,13 @@ addToDone("Exercise 94 is complete")
 // Exercise 95
 // Write a function called lowestPriceBook that takes in the above defined array of objects "books" and returns the object containing the title, price, and author of the book with the lowest priced book.
 // Hint: Much like sometimes start functions with a variable set to zero or float('inf'), you may want to create a object with the price set to float('inf') to compare to each object in the array
+
+function lowestPriceBook(obj){
+  let least = {price: Infinity};
+  
+  obj.forEach
+}
+
 
 
 assert(lowestPriceBook(books), {
