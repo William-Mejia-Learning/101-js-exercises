@@ -1610,7 +1610,9 @@ addToDone("Exercise 92 is complete.")
 // Exercise 93
 // Write a function named getAverageBookPrice that takes in a array of objects and returns the average book price.
 
-function getAverageBookPrice(obj){}
+function getAverageBookPrice(obj){
+  return totalOfBookPrices(obj) / getNumberOfBooks(obj)
+}
 
 
 
@@ -1621,6 +1623,19 @@ addToDone("Exercise 93 is complete.")
 // Exercise 94
 // Write a function called highestPriceBook that takes in the above defined array of objects "books" and returns the object containing the title, price, and author of the book with the highest priced book.
 // Hint: Much like sometimes start functions with a variable set to zero, you may want to create a object with the price set to zero to compare to each object's price in the array
+
+function highestPriceBook(obj){
+  let highest = -Infinity;
+  
+  obj.forEach(function(high){
+    if(high.price > highest){
+      high = highest;
+    }
+  return highest.price;
+  })
+}
+
+
 
 assert(highestPriceBook(books), {
     "title": "The Visual Display of Quantitative Information",
