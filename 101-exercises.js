@@ -1193,6 +1193,18 @@ addToDone("Exercise 71 is correct.");
 // Exercise 72
 // Write a function definition named countEvens that takes in sequence of numbers and returns the number of even numbers
 
+function countEvens(arr){
+  let count = 0 ;
+  
+  arr.forEach(function(num){
+    if(num % 2 === 0) {
+      count++;
+    }
+  })
+  return count;
+}
+
+
 assert(countEvens([1, 2, 3]), 1, "Exercise 72");
 assert(countEvens([2, 5, 6]), 2, "Exercise 72");
 assert(countEvens([3, 3, 3]), 0, "Exercise 72");
@@ -1202,6 +1214,13 @@ addToDone("Exercise 72 is correct.")
 
 // Exercise 73
 // Write a function definition named hasOdds that takes in sequence of numbers and returns true if there are any odd numbers in the sequence
+
+function hasOdds(arr){
+  let containsOdd = false;
+  arr.forEach(function(){
+    
+  })
+}
 
 assert(hasOdds([1, 2, 3]), true, "Exercise 73");
 assert(hasOdds([2, 5, 6]), true, "Exercise 73");
