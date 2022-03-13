@@ -1092,10 +1092,10 @@ function onlyOddNumbers(arr){
   let odd = [];
   for (let odd1 of arr){
     if(odd1 % 2 !== 0){
-      odd.push(odd1)
+      odd.push(odd1);
     }
   }
-  return odd
+  return odd;
 }
 
 assert(onlyOddNumbers([1, 2, 3]), [1, 3], "Exercise 67");
@@ -1108,6 +1108,18 @@ addToDone("Exercise 67 is correct.")
 // Exercise 68
 // Write a function definition named onlyEvenNumbers that takes in sequence of numbers and returns the even numbers in an array.
 
+function onlyEvenNumbers(arr){
+  let even = [];
+  for (let even1 of arr){
+    if(even1 % 2 === 0){
+      even.push(even1);
+    }
+  }
+  return even;
+}
+
+
+
 assert(onlyEvenNumbers([1, 2, 3]), [2], "Exercise 68");
 assert(onlyEvenNumbers([-5, -4, -3, -2, -1, 1, 2, 3, 4, 5]), [-4, -2, 2, 4], "Exercise 68");
 assert(onlyEvenNumbers([-4, -3, 1]), [-4], "Exercise 68");
@@ -1116,6 +1128,17 @@ addToDone("Exercise 68 is correct.")
 
 // Exercise 69
 // Write a function definition named onlyPositiveNumbers that takes in sequence of numbers and returns the positive numbers in an array.
+
+function onlyPositiveNumbers(arr){
+  let pos = [];
+  for (let pos1 of arr){
+    if(pos1 > 0){
+      pos.push(pos1);
+    }
+  }
+  return pos;
+}
+
 
 assert(onlyPositiveNumbers([1, 2, 3]), [1, 2, 3], "Exercise 69");
 assert(onlyPositiveNumbers([-5, -4, -3, -2, -1, 1, 2, 3, 4, 5]), [1, 2, 3, 4, 5], "Exercise 69");
@@ -1126,6 +1149,17 @@ addToDone("Exercise 69 is correct.")
 // Exercise 70
 // Write a function definition named onlyNegativeNumbers that takes in sequence of numbers and returns the negative numbers in an array.
 
+function onlyNegativeNumbers(arr){
+  let neg = [];
+  for (let neg1 of arr){
+    if(neg1 < 0){
+      neg.push(neg1);
+    }
+  }
+  return neg;
+}
+
+
 assert(onlyNegativeNumbers([1, 2, 3]), [], "Exercise 70");
 assert(onlyNegativeNumbers([-5, -4, -3, -2, -1, 1, 2, 3, 4, 5]), [-5, -4, -3, -2, -1], "Exercise 70");
 assert(onlyNegativeNumbers([-4, -3, 1]), [-4, -3], "Exercise 70");
@@ -1135,6 +1169,8 @@ addToDone("Exercise 70 is correct.");
 
 // Exercise 71
 // Write a function definition named hasEvens that takes in sequence of numbers and returns true if there are any even numbers in the sequence
+
+
 
 assert(hasEvens([1, 2, 3]), true, "Exercise 71");
 assert(hasEvens([2, 5, 6]), true, "Exercise 71");
