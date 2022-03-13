@@ -1544,7 +1544,7 @@ addToDone("Exercise 89 is complete.")
 // Write a function named getBookAuthor that takes in a object (the above declared book variable) and returns the author's name
 
 function getBookAuthor(obj){
-  
+  return book.author;
 }
 
 
@@ -1583,6 +1583,10 @@ const books = [
 // Exercise 91
 // Write a function named getNumberOfBooks that takes in a array of objects and returns the number of objects in that array.
 
+function getNumberOfBooks(obj){
+  return books.length;
+}
+
 assert(getNumberOfBooks(books), 4, "Exercise 91");
 addToDone("Exercise 91 is complete.")
 
@@ -1591,12 +1595,24 @@ addToDone("Exercise 91 is complete.")
 // Exercise 92
 // Write a function named totalOfBookPrices that takes in a array of objects and returns the sum total of all the book prices added together
 
+function totalOfBookPrices(obj){
+  let total = 0;
+  obj.forEach(function(prices){
+    total += prices.price;
+  })
+  return total;
+}
+
 assert(totalOfBookPrices(books), 122.9, "Exercise 92")
 addToDone("Exercise 92 is complete.")
 
 
 // Exercise 93
 // Write a function named getAverageBookPrice that takes in a array of objects and returns the average book price.
+
+function getAverageBookPrice(obj){}
+
+
 
 assert(getAverageBookPrice(books), 30.725, "Exercise 93");
 addToDone("Exercise 93 is complete.")
