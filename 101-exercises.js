@@ -1784,8 +1784,9 @@ function getAverageSpentPerItem(obj){
   
   let myObjArray = obj.items;
   myObjArray.forEach(function(pr){
-  total += pr.price;
-  
+    total += pr.price * pr.quantity;
+  })
+  return total / totalNumberOfItems(obj);
   }
   
               
