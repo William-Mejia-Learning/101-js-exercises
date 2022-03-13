@@ -1782,7 +1782,7 @@ function getAverageSpentPerItem(obj){
   let totalPrice = 0;
   let totalQuant = 0;
   
-  
+  let items = obj.items;
 }
 
 
