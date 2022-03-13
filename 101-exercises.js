@@ -1413,6 +1413,11 @@ addToDone("Exercise 82 is correct.")
 // Exercise 83
 // Write a function definition named getUniqueValues that takes in an array and returns an with only the unique values from that array.
 
+function getUniqueValues(arr){
+  return arr.filter((v, i, a) => a.indexOf(v) === i);
+}
+
+
 assert(getUniqueValues(["ant", "ant", "mosquito", "mosquito", "ladybug"]), ["ant", "mosquito", "ladybug"], "Exercise 83");
 assert(getUniqueValues(["b", "a", "n", "a", "n", "a", "s"]), ["b", "a", "n", "s"], "Exercise 83");
 assert(getUniqueValues(["mary", "had", "a", "little", "lamb", "little", "lamb", "little", "lamb"]), ["mary", "had", "a", "little", "lamb"], "Exercise 83");
@@ -1421,6 +1426,16 @@ addToDone("Exercise 83 is correct.")
 
 // Exercise 84
 // Write a function definition named elementsTimesTwo that takes in an array of numbers and returns an array with each value multiplied by 2.
+
+function elementsTimesTwo(arr){
+  let arr1 = [];
+  arr.forEach(function(num){
+    arr1 = num * 2;
+    num.
+  })
+    return arr1;
+}
+
 
 
 assert(elementsTimesTwo([1, 2, 3]), [2, 4, 6], "Exercise 84")
