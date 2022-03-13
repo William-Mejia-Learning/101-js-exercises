@@ -1654,7 +1654,12 @@ addToDone("Exercise 94 is complete")
 function lowestPriceBook(obj){
   let least = {price: Infinity};
   
-  obj.forEach
+  obj.forEach(function(prices){
+    if(prices.price < least.price){
+      least = prices;
+    }
+  })
+  return least;
 }
 
 
