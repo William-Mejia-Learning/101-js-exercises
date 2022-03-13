@@ -1727,7 +1727,7 @@ addToDone("Exercise 96 is complete")
 
 
 function numberOfItemTypes(obj){
-  let myObjArray = shoppingCart.items;
+  let myObjArray = obj.items;
   return myObjArray.length;
 }
   
@@ -1742,7 +1742,12 @@ addToDone("Exercise 97 is complete.")
 // This should return the sum of all of the quantities from each item type
 
 function totalNumberOfItems(obj){
-  
+  let total = 0;
+  let myObjArray = obj.items;
+  myObjArray.forEach(function(pr){
+    total += pr.quantity;
+  })
+  return total;
 }
 
 assert(totalNumberOfItems(shoppingCart), 17, "Exercise 98");
@@ -1753,6 +1758,9 @@ addToDone("Exercise 98 is complete.")
 // Exercise 99
 // Write a function named getAverageItemPrice that takes in the shopping cart as an input and returns the average of all the item prices.
 // Hint - This should determine the total price divided by the number of types of items. This does not account for each item type's quantity.\
+
+function getAverageItemPrice
+
 
 assert(getAverageItemPrice(shoppingCart), 2.1420000000000003, "Exercise 99");
 addToDone("Exercise 99 is complete.")
