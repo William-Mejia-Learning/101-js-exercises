@@ -1004,16 +1004,16 @@ function maxMinusMin(arr){
   let smallest = arr[0];
   for(let small of arr){
     if (small < smallest){
-      smallest = small
+      smallest = small;
     }
   }
-  let highest = arr[0]
+  let highest = arr[0];
   for(let high of arr){
     if(high > highest){
-      highest = high
+      highest = high;
     }
   }
-  return highest - smallest
+  return highest - smallest;
 }
 
 assert(maxMinusMin([1, 2, 2, 8, 3, 4]), 7, "Exercise 63");
@@ -1025,6 +1025,15 @@ addToDone("Exercise 63 is correct.")
 // Exercise 64
 // Write a function definition named productOfAll that takes in sequence of numbers and returns the product of multiplying all the numbers together
 
+function productOfAll(input){
+  let product = 1;
+  for(let prod of input){
+    product *= prod;
+  }
+  return product;
+}
+
+
 assert(productOfAll([1, 2, 3]), 6, "Exercise 64");
 assert(productOfAll([3, 4, 5]), 60, "Exercise 64");
 assert(productOfAll([2, 2, 3, 0]), 0, "Exercise 64");
@@ -1033,6 +1042,16 @@ addToDone("Exercise 64 is correct.")
 
 // Exercise 65
 // Write a function definition named getHighestNumber that takes in sequence of numbers and returns the largest number.
+
+function getHighestNumber(arr){
+  let highest = Infinity;
+  for(let high of arr){
+    if(high > highest){
+      highest = high;
+    }
+    console.log(highest)
+}
+
 
 
 assert(getHighestNumber([1, 2, 3]), 3, "Exercise 65");
