@@ -1497,6 +1497,11 @@ const thomasPaper = {
 // Exercise 87
 // Write a function named getPaperTitle that takes in a object and returns the title property
 
+function getPaperTitle(input){
+  return input.title;
+}
+
+
 assert(getPaperTitle(tukeyPaper), "The Future of Data Analysis", "Exercise 87");
 assert(getPaperTitle(thomasPaper), "A mathematical model of glutathione metabolism", "Exercise 87");
 addToDone("Exercise 87 is correct.")
@@ -1504,6 +1509,11 @@ addToDone("Exercise 87 is correct.")
 
 // Exercise 88
 // Write a function named getYearPublished that takes in an objects and returns the value behind the "year_published" key.
+
+function getYearPublished(input){
+  return input.year_published;
+}
+
 
 assert(getYearPublished(tukeyPaper), 1962, "Exercise 88");
 assert(getYearPublished(thomasPaper), 2008, "Exercise 88");
