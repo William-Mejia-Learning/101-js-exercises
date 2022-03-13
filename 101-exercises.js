@@ -1779,13 +1779,12 @@ addToDone("Exercise 99 is complete.")
 // Hint: You may need to set an initial total price and total total quantity to zero, then sum up and divide that total price by the total quantity
 
 function getAverageSpentPerItem(obj){
-  let total = 0;
-  let myObjArray = obj.items;
-  myObjArray.forEach(function(pr){
-    total += pr.price;
-  })
-  console.log(total / totalNumberOfItems(obj))
+  let totalPrice = 0;
+  let totalQuant = 0;
+  
+  
 }
+
 
 
 
