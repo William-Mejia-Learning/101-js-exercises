@@ -1089,7 +1089,13 @@ addToDone("Exercise 66 is correct.")
 
 
 function onlyOddNumbers(arr){
-  for (let odd of arr){}
+  let odd = [];
+  for (let odd1 of arr){
+    if(odd1 % 2 !== 0){
+      odd.push(odd1)
+    }
+  }
+  return odd
 }
 
 assert(onlyOddNumbers([1, 2, 3]), [1, 3], "Exercise 67");
