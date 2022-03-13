@@ -1400,8 +1400,8 @@ addToDone("Exercise 81 is correct.")
 // Exercise 82
 // Write a function definition named longestString that takes in sequence of strings and returns the longest string in the array.
 
-function longesttString(arr){
-  return arr.reduce((a, b) => a.length <= b.length ? a : b);
+function longestString(arr){
+  return arr.reduce((a, b) => a.length >= b.length ? a : b);
 }
 
 assert(longestString(["kiwi", "mango", "strawberry"]), "strawberry", "Exercise 82");
