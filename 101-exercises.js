@@ -1044,12 +1044,13 @@ addToDone("Exercise 64 is correct.")
 // Write a function definition named getHighestNumber that takes in sequence of numbers and returns the largest number.
 
 function getHighestNumber(arr){
-  let highest = Infinity;
+  let highest = -Infinity;
   for(let high of arr){
     if(high > highest){
       highest = high;
     }
-    console.log(highest)
+}
+  return highest;
 }
 
 
@@ -1065,6 +1066,17 @@ addToDone("Exercise 65 is correct.")
 // Exercise 66
 // Write a function definition named getSmallestNumber that takes in sequence of numbers and returns the smallest number.
 
+function getSmallestNumber(arr){
+  let smallest = Infinity;
+  for(let small of arr){
+    if(small < smallest){
+      smallest = small;
+    }
+}
+  return smallest;
+}
+
+
 
 assert(getSmallestNumber([1, 2, 3]), 1, "Exercise 66");
 assert(getSmallestNumber([3, 5, 9, 8, 1]), 1, "Exercise 66");
@@ -1074,6 +1086,11 @@ addToDone("Exercise 66 is correct.")
 
 // Exercise 67
 // Write a function definition named onlyOddNumbers that takes in sequence of numbers and returns the odd numbers in an array.
+
+
+function onlyOddNumbers(arr){
+  for (let odd of arr){}
+}
 
 assert(onlyOddNumbers([1, 2, 3]), [1, 3], "Exercise 67");
 assert(onlyOddNumbers([-5, -4, -3, -2, -1, 1, 2, 3, 4, 5]), [-5, -3, -1, 1, 3, 5], "Exercise 67");
