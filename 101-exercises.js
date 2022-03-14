@@ -1385,14 +1385,7 @@ addToDone("Exercise 80 is correct.")
 // Write a function definition named shortestString that takes in an array of strings and returns the shortest string in the array.
 
 function shortestString(arr){
-  let length = 0;
-  arr.forEach(function(short){
-    if(short.length > length){
-      length = short;
-      console.log(length)
-    }
-  });
-  return length;
+  arr.reduce()
 }
 
 
