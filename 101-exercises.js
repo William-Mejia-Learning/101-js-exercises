@@ -1387,9 +1387,12 @@ addToDone("Exercise 80 is correct.")
 function shortestString(arr){
   let length = 0;
   arr.forEach(function(short){
-    if(short.length > length)
-  })
-  // return arr.reduce((a, b) => a.length <= b.length ? a : b);
+    if(short.length > length){
+      length = short;
+      console.log(length)
+    }
+  });
+  return length;
 }
 
 
