@@ -1803,14 +1803,19 @@ addToDone("Exercise 100 is complete.")
 // Hint: Consider creating a variable that is a object with the keys "price" and "quantity" both set to 0. You can then compare each item's price and quantity total to the one from "most"
 
 function mostSpentOnItem(obj){
+  let myObjArray = obj.items;
   let priceAndQuant = {
     price: 0,
     quantity: 0 
   }
-  obj.forEach(function(item){
-    let priceTimeQuant = priceAndQuant.price * price
-    if(priceAndQaunt.price > item.price && )
-  })
+  myObjArray.forEach(function(item){
+    let priceTimesQuant = priceAndQuant.price * priceAndQuant.quantity;
+    let itemNum = item.price * item.quantity;
+    if(itemNum > priceTimesQuant){
+      priceAndQuant = item;
+    }
+  });
+    return priceAndQuant;
 }
 
 
