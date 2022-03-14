@@ -1387,12 +1387,12 @@ addToDone("Exercise 80 is correct.")
 function shortestString(str){
   let shortLength = Infinity;
   let shortest = "";
-    str.forEach(function(num)){
-      if(str[i].length < shortLength){
-        shortest = str[i];
-        shortLength = str[i].length;
+    str.forEach(function(num){
+      if(num.length < shortLength){
+        shortest = num;
+        shortLength = num.length;
       }
-    }
+    })
   return shortest;
 }
 
@@ -1408,8 +1408,23 @@ addToDone("Exercise 81 is correct.")
 // Write a function definition named longestString that takes in sequence of strings and returns the longest string in the array.
 
 function longestString(arr){
-  return arr.reduce((a, b) => a.length >= b.length ? a : b);
+  let longestLength = -Infinity;
+  let longest ="";
+  arr.forEach(function(num){
+    if(num.length > longestLength){
+      longest = num;
+      longestLength = num.length;
+    }
+  })
+  return longest;
 }
+
+
+
+
+// function longestString(arr){
+//   return arr.reduce((a, b) => a.length >= b.length ? a : b);
+// }
 
 assert(longestString(["kiwi", "mango", "strawberry"]), "strawberry", "Exercise 82");
 assert(longestString(["hello", "everybody"]), "everybody", "Exercise 82");
